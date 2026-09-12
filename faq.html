@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions (FAQ) | KhetSaathi</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Global Dynamic Navigation Bar -->
+    <div id="main-nav-container"></div>
+
+    <main class="py-5">
+        <div class="container" style="max-width: 860px;">
+            <div class="text-center mb-5">
+                <span class="badge bg-success bg-opacity-10 text-success fw-bold px-3 py-2 rounded-pill mb-2">Help Center</span>
+                <h2 class="fw-bold">Frequently Asked Questions</h2>
+                <p class="text-muted">Everything you need to know about booking farm machinery, hiring laborers, and payment safety on KhetSaathi.</p>
+            </div>
+
+            <div class="accordion shadow-sm rounded-4 overflow-hidden" id="faqAccordion">
+                <!-- FAQ 1: Booking & Conflicts -->
+                <div class="accordion-item border-0 border-bottom">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="bi bi-calendar-check text-success me-2"></i> How does equipment booking work and how are conflicts prevented?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body text-muted small lh-lg">
+                            When a farmer selects machinery and specifies a date range, KhetSaathi runs an atomic database transaction with concurrency locking to check for overlapping active rentals. Once payment is confirmed, those specific dates are locked exclusively for your booking, ensuring no other farmer can reserve the same equipment on those days.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 2: Late Fees -->
+                <div class="accordion-item border-0 border-bottom">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="bi bi-clock-history text-warning me-2"></i> How are late return fees calculated?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body text-muted small lh-lg">
+                            To ensure fair availability for subsequent farmers, equipment returned after the scheduled end date incurs a standardized late fee:
+                            <div class="p-3 my-2 bg-light rounded border text-dark font-monospace">
+                                Late Fee = (Days Past Return Date) × (Daily Rental Rate × 1.5)
+                            </div>
+                            If returned on or before the due date, no late fee is applied.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 3: Booking Extensions -->
+                <div class="accordion-item border-0 border-bottom">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="bi bi-calendar-plus text-primary me-2"></i> Can I extend my booking if field work is delayed?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body text-muted small lh-lg">
+                            Yes! In your "My Bookings" screen, click <strong>Extend Booking</strong>. You can extend by 1 to 30 days. The system immediately checks that no other farmer has reserved the machinery during the requested extension days and recalculates your total based on the standard daily rate.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 4: Cancellation Policy -->
+                <div class="accordion-item border-0 border-bottom">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <i class="bi bi-x-circle text-danger me-2"></i> What is the cancellation policy?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body text-muted small lh-lg">
+                            Farmers and owners can cancel any booking in <strong>Pending</strong> or <strong>Confirmed</strong> status prior to the physical equipment handover. Once the status transitions to <strong>Ongoing</strong>, the rental cannot be cancelled mid-operation.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 5: Payment Security -->
+                <div class="accordion-item border-0 border-bottom">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <i class="bi bi-shield-lock text-success me-2"></i> How secure are payments on KhetSaathi?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body text-muted small lh-lg">
+                            KhetSaathi uses Razorpay payment gateway integration with HMAC-SHA256 signature verification. All card details, UPI transactions, and net banking operations are handled directly through RBI-compliant secure channels. KhetSaathi does not store raw credit card or banking credentials.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 6: For Equipment Owners -->
+                <div class="accordion-item border-0">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            <i class="bi bi-truck text-info me-2"></i> How do Equipment Owners receive booking requests?
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body text-muted small lh-lg">
+                            Owners receive instant in-app alerts on their notification bell and dashboard. Once payment is confirmed, the owner inspects the request and clicks <strong>Handover (Ongoing)</strong> when handing over the machinery to the farmer.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Still Need Help -->
+            <div class="card border-0 bg-light p-4 rounded-4 text-center mt-5">
+                <h5 class="fw-bold mb-1">Still have questions?</h5>
+                <p class="text-muted small mb-3">Our agricultural support team is available 7 days a week.</p>
+                <div>
+                    <a href="mailto:support@khetsaathi.com" class="btn btn-primary-khet btn-sm px-4">Contact Support</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center small text-muted">
+            © 2026 KhetSaathi. Farm Equipment & Labor Sharing System.
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core Application JS -->
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

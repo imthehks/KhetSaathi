@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Tracker & History | KhetSaathi</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Global Dynamic Navigation Bar -->
+    <div id="main-nav-container"></div>
+
+    <main class="py-4">
+        <div class="container" style="max-width: 900px;">
+            <!-- Page Title -->
+            <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+                <div>
+                    <h2 class="fw-bold mb-1">My Bookings & Rentals</h2>
+                    <p class="text-muted small mb-0">Track live rental status, complete payments, request extensions, and return machinery.</p>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                    <label class="small text-muted fw-bold">Status:</label>
+                    <select class="form-select form-select-sm" id="filter-booking-status" style="width: 150px;">
+                        <option value="">All Statuses</option>
+                        <option value="pending">Pending Payment</option>
+                        <option value="confirmed">Confirmed</option>
+                        <option value="ongoing">Ongoing</option>
+                        <option value="completed">Completed</option>
+                        <option value="cancelled">Cancelled</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Booking State Machine Explainer Card -->
+            <div class="card border-0 shadow-sm rounded-3 mb-4 bg-light">
+                <div class="card-body p-3">
+                    <div class="d-flex align-items-center gap-3 flex-wrap small text-muted">
+                        <span class="fw-bold text-dark"><i class="bi bi-info-circle text-primary me-1"></i> State Machine:</span>
+                        <span><span class="badge badge-pending">1. Pending</span> (Pay)</span>
+                        <i class="bi bi-arrow-right"></i>
+                        <span><span class="badge badge-confirmed">2. Confirmed</span> (Approved)</span>
+                        <i class="bi bi-arrow-right"></i>
+                        <span><span class="badge badge-ongoing">3. Ongoing</span> (In field)</span>
+                        <i class="bi bi-arrow-right"></i>
+                        <span><span class="badge badge-completed">4. Completed</span> (Returned)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bookings List Container -->
+            <div id="bookings-list-container">
+                <div class="text-center py-5">
+                    <div class="spinner-border text-success" role="status"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center small text-muted">
+            © 2026 KhetSaathi. Farm Equipment & Labor Sharing System.
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Razorpay Checkout Script -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <!-- Core Application JS -->
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
