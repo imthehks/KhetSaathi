@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KhetSaathi | Farm Equipment & Labor Sharing System</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Global Dynamic Navigation Bar -->
+    <div id="main-nav-container"></div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-banner text-center position-relative">
+            <div class="container py-4">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <span class="badge bg-light text-success fw-bold px-3 py-2 mb-3 rounded-pill">
+                            🌾 Empowering Farmers with Shared Mechanization & Labor
+                        </span>
+                        <h1 class="display-4 fw-bold mb-3">Modern Farming, Shared Equipment & Skilled Labor</h1>
+                        <p class="hero-subtitle mb-4">
+                            Rent high-yield tractors, harvesters, and implement tools on a daily basis. Hire verified agricultural operators to accelerate your harvest.
+                        </p>
+                        <div class="d-flex justify-content-center gap-3 flex-wrap">
+                            <a href="equipment.html" class="btn btn-warning fw-bold px-4 py-2 text-dark shadow-sm">
+                                <i class="bi bi-truck me-1"></i> Rent Equipment
+                            </a>
+                            <a href="labor.html" class="btn btn-light fw-bold px-4 py-2 text-success shadow-sm">
+                                <i class="bi bi-people-fill me-1"></i> Hire Farm Labor
+                            </a>
+                            <a href="register.html" class="btn btn-outline-light fw-bold px-4 py-2">
+                                <i class="bi bi-plus-circle me-1"></i> List Your Machinery
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Search & Category Shortcuts -->
+        <div class="container mb-5">
+            <div class="search-box-card p-4 mx-auto" style="max-width: 960px;">
+                <form action="equipment.html" method="GET" class="row g-3 align-items-center">
+                    <div class="col-md-5">
+                        <label class="form-label small text-muted fw-bold">Equipment or Tool</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-light border-end-0"><i class="bi bi-search text-muted"></i></span>
+                            <input type="text" name="q" class="form-control border-start-0" placeholder="e.g. Mahindra Tractor, Harvester, Rotavator">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label small text-muted fw-bold">Location / District</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-light border-end-0"><i class="bi bi-geo-alt text-muted"></i></span>
+                            <input type="text" name="location" class="form-control border-start-0" placeholder="e.g. Ludhiana, Karnal, Meerut">
+                        </div>
+                    </div>
+                    <div class="col-md-3 d-flex align-items-end">
+                        <button type="submit" class="btn btn-primary-khet w-100 py-2">
+                            Search Machinery
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- How It Works Section -->
+        <section class="container py-5">
+            <div class="text-center mb-5">
+                <h6 class="text-success fw-bold text-uppercase">Simple 3-Step Process</h6>
+                <h2 class="fw-bold">How KhetSaathi Works for Farmers</h2>
+                <p class="text-muted">Save up to 40% on operational capital by renting instead of buying.</p>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 p-4 shadow-sm rounded-4">
+                        <div class="rounded-circle bg-success bg-opacity-10 text-success d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 70px; height: 70px;">
+                            <i class="bi bi-search fs-2"></i>
+                        </div>
+                        <h5 class="fw-bold">1. Search & Select</h5>
+                        <p class="text-muted small mb-0">Browse verified tractors, harvesters, seeders, or skilled operators near your village with transparent daily rates.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 p-4 shadow-sm rounded-4">
+                        <div class="rounded-circle bg-warning bg-opacity-10 text-warning d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 70px; height: 70px;">
+                            <i class="bi bi-credit-card-2-front fs-2"></i>
+                        </div>
+                        <h5 class="fw-bold">2. Book & Pay Securely</h5>
+                        <p class="text-muted small mb-0">Select your required dates. Confirm with safe Razorpay checkout. The machinery is reserved without scheduling conflicts.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 p-4 shadow-sm rounded-4">
+                        <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 70px; height: 70px;">
+                            <i class="bi bi-check2-circle fs-2"></i>
+                        </div>
+                        <h5 class="fw-bold">3. Work & Return</h5>
+                        <p class="text-muted small mb-0">Owner hands over the equipment. Complete your field work on time, request date extensions if needed, and return smoothly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Equipment Section -->
+        <section class="bg-white py-5 border-top border-bottom">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+                    <div>
+                        <h3 class="fw-bold mb-1">Featured Farm Machinery</h3>
+                        <p class="text-muted small mb-0">Popular tractors and implements available for instant booking.</p>
+                    </div>
+                    <a href="equipment.html" class="btn btn-outline-khet btn-sm">View All Equipment <i class="bi bi-arrow-right ms-1"></i></a>
+                </div>
+                <div class="row" id="featured-equipment-container">
+                    <div class="col-12 text-center py-4">
+                        <div class="spinner-border text-success" role="status"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Labor Section -->
+        <section class="container py-5">
+            <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+                <div>
+                    <h3 class="fw-bold mb-1">Verified Skilled Labor</h3>
+                    <p class="text-muted small mb-0">Hire specialized tractor drivers, transplanting crews, and harvesting operators.</p>
+                </div>
+                <a href="labor.html" class="btn btn-outline-khet btn-sm">View All Laborers <i class="bi bi-arrow-right ms-1"></i></a>
+            </div>
+            <div class="row" id="featured-labor-container">
+                <div class="col-12 text-center py-4">
+                    <div class="spinner-border text-success" role="status"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust & Security Banner -->
+        <section class="container mb-5">
+            <div class="p-4 p-md-5 rounded-4 bg-light border text-center">
+                <h4 class="fw-bold mb-2">Are you an Equipment Owner or Farm Laborer?</h4>
+                <p class="text-muted mb-4" style="max-width: 650px; margin: 0 auto;">
+                    Turn your idle machinery into steady extra income. List your tractor, cultivator, or skilled services on KhetSaathi today.
+                </p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="register.html" class="btn btn-primary-khet px-4">Register as Equipment Owner</a>
+                    <a href="register.html" class="btn btn-outline-dark px-4">Join as Skilled Laborer</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Booking Modal Template -->
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title fw-bold" id="bookingModalTitle">Book Farm Equipment</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="mb-3 p-3 bg-light rounded-3 border">
+                        <h6 class="fw-bold mb-1 text-truncate" id="booking-item-name">Mahindra Tractor</h6>
+                        <div class="d-flex justify-content-between text-muted small">
+                            <span>Rate: <strong class="text-success" id="booking-item-rate">₹1,400 / day</strong></span>
+                            <span>Location: <span id="booking-item-location">Ludhiana</span></span>
+                        </div>
+                    </div>
+                    <form id="booking-form" onsubmit="event.preventDefault(); submitBookingForm();">
+                        <div class="row g-2 mb-3">
+                            <div class="col-6">
+                                <label class="form-label small fw-bold">Start Date</label>
+                                <input type="date" class="form-control" id="booking-start-date" required>
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label small fw-bold">End Date</label>
+                                <input type="date" class="form-control" id="booking-end-date" required>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center p-3 mb-3 bg-success bg-opacity-10 rounded-3 border border-success border-opacity-25">
+                            <div>
+                                <div class="text-muted small">Estimated Duration</div>
+                                <div class="fw-bold text-dark" id="booking-calculated-days">2 Day(s)</div>
+                            </div>
+                            <div class="text-end">
+                                <div class="text-muted small">Total Payable</div>
+                                <div class="fs-4 fw-bold text-success" id="booking-calculated-total">₹2,800.00</div>
+                            </div>
+                        </div>
+                        <button type="submit" id="btn-confirm-booking" class="btn btn-primary-khet w-100 py-2">
+                            Proceed to Pay & Confirm
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold text-white mb-2">🌾 KhetSaathi</h5>
+                    <p class="small">India's leading Farm Equipment & Agricultural Labor Sharing Platform. Connecting farmers, machinery owners, and skilled rural workforce.</p>
+                </div>
+                <div class="col-sm-6 col-lg-2">
+                    <h6 class="text-white fw-bold">Quick Links</h6>
+                    <ul class="list-unstyled small">
+                        <li class="mb-1"><a href="equipment.html">Farm Equipment</a></li>
+                        <li class="mb-1"><a href="labor.html">Farm Labor</a></li>
+                        <li class="mb-1"><a href="bookings.html">My Bookings</a></li>
+                        <li class="mb-1"><a href="faq.html">FAQ & Help</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <h6 class="text-white fw-bold">Platform Trust</h6>
+                    <ul class="list-unstyled small">
+                        <li class="mb-1"><i class="bi bi-shield-check text-success me-1"></i> Razorpay Verified Gateway</li>
+                        <li class="mb-1"><i class="bi bi-calendar2-range text-success me-1"></i> Zero Conflict Scheduling</li>
+                        <li class="mb-1"><i class="bi bi-clock-history text-success me-1"></i> Fair Transparent Late Fees</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="text-white fw-bold">Support & Inquiries</h6>
+                    <p class="small mb-1">Email: support@khetsaathi.com</p>
+                    <p class="small mb-0">Toll-Free Helpline: 1800-KHET-SAATHI</p>
+                </div>
+            </div>
+            <div class="text-center pt-4 mt-4 border-top border-secondary border-opacity-25 small">
+                © 2026 KhetSaathi. Built for Indian Agricultural Mechanization.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Razorpay Checkout Script -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <!-- Core Application JS -->
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

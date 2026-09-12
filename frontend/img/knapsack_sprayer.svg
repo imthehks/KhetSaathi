@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grad_knapsack_sprayer" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a192f" />
+      <stop offset="100%" stop-color="#153826" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.2" />
+    </filter>
+  </defs>
+
+  <!-- Background Field Grid -->
+  <rect width="800" height="500" fill="url(#grad_knapsack_sprayer)" />
+  
+  <!-- Stylized Sun & Field Horizon -->
+  <circle cx="680" cy="120" r="80" fill="#ffffff" opacity="0.08" />
+  <circle cx="680" cy="120" r="50" fill="#ffffff" opacity="0.12" />
+  
+  <!-- Soil / Field Contours -->
+  <path d="M 0 380 Q 200 350 400 375 T 800 360 L 800 500 L 0 500 Z" fill="#1b2e23" opacity="0.85" />
+  <path d="M 0 410 Q 250 390 500 405 T 800 395 L 800 500 L 0 500 Z" fill="#122018" />
+
+  <!-- Agricultural Furrow Rows -->
+  <line x1="0" y1="440" x2="800" y2="430" stroke="#2d4a37" stroke-width="2" stroke-dasharray="12,8" opacity="0.6" />
+  <line x1="0" y1="470" x2="800" y2="460" stroke="#2d4a37" stroke-width="3" stroke-dasharray="15,10" opacity="0.6" />
+
+  <!-- Central Illustrated Machinery Graphics -->
+  <g transform="translate(160, 80)" filter="url(#shadow)">
+    
+  <!-- Chemical Tank -->
+  <rect x="170" y="40" width="120" height="135" rx="24" fill="#0077b6" stroke="#ffffff" stroke-width="4" />
+  <rect x="205" y="22" width="50" height="18" rx="4" fill="#ffd166" />
+  <!-- Pressure Gauge -->
+  <circle cx="260" cy="65" r="14" fill="#ffffff" />
+  <line x1="260" y1="65" x2="265" y2="60" stroke="#d90429" stroke-width="3" />
+  <!-- Hose & Telescopic Spray Lance -->
+  <path d="M 170 140 Q 120 160 120 120 Q 120 80 150 70" stroke="#ffb703" stroke-width="8" fill="none" />
+  <line x1="150" y1="70" x2="80" y2="20" stroke="#e5e5e5" stroke-width="5" stroke-linecap="round" />
+  <!-- Atomizing Spray Cloud -->
+  <circle cx="65" cy="10" r="15" fill="#90e0ef" opacity="0.6" />
+  <circle cx="50" cy="15" r="10" fill="#90e0ef" opacity="0.5" />
+
+  </g>
+
+  <!-- Technical Spec & Model Caption Ribbon -->
+  <rect x="30" y="30" width="280" height="44" rx="8" fill="#000000" fill-opacity="0.4" />
+  <circle cx="52" cy="52" r="8" fill="#00b4d8" />
+  <text x="70" y="57" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="bold" fill="#ffffff">Battery Knapsack Sprayer</text>
+
+  <!-- Bottom Spec Banner -->
+  <rect x="30" y="435" width="740" height="40" rx="6" fill="#ffffff" fill-opacity="0.12" />
+  <text x="50" y="460" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#e2e8f0">🚜 SPECS: 16L Capacity • Dual High-Pressure Pump • 6-Hour Battery</text>
+  <text x="750" y="460" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="bold" fill="#00b4d8">KhetSaathi Certified</text>
+</svg>

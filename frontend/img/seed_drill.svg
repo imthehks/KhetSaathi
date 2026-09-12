@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grad_seed_drill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f140e" />
+      <stop offset="100%" stop-color="#173826" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.2" />
+    </filter>
+  </defs>
+
+  <!-- Background Field Grid -->
+  <rect width="800" height="500" fill="url(#grad_seed_drill)" />
+  
+  <!-- Stylized Sun & Field Horizon -->
+  <circle cx="680" cy="120" r="80" fill="#ffffff" opacity="0.08" />
+  <circle cx="680" cy="120" r="50" fill="#ffffff" opacity="0.12" />
+  
+  <!-- Soil / Field Contours -->
+  <path d="M 0 380 Q 200 350 400 375 T 800 360 L 800 500 L 0 500 Z" fill="#1b2e23" opacity="0.85" />
+  <path d="M 0 410 Q 250 390 500 405 T 800 395 L 800 500 L 0 500 Z" fill="#122018" />
+
+  <!-- Agricultural Furrow Rows -->
+  <line x1="0" y1="440" x2="800" y2="430" stroke="#2d4a37" stroke-width="2" stroke-dasharray="12,8" opacity="0.6" />
+  <line x1="0" y1="470" x2="800" y2="460" stroke="#2d4a37" stroke-width="3" stroke-dasharray="15,10" opacity="0.6" />
+
+  <!-- Central Illustrated Machinery Graphics -->
+  <g transform="translate(160, 80)" filter="url(#shadow)">
+    
+  <!-- Seed & Fertilizer Dual Hoppers -->
+  <polygon points="120,40 180,40 165,110 135,110" fill="#ffd166" stroke="#2b2d42" stroke-width="3" />
+  <polygon points="190,40 250,40 235,110 205,110" fill="#2a9d8f" stroke="#2b2d42" stroke-width="3" />
+  <polygon points="260,40 320,40 305,110 275,110" fill="#ffd166" stroke="#2b2d42" stroke-width="3" />
+  <!-- Main Frame Bar -->
+  <rect x="90" y="105" width="280" height="20" rx="4" fill="#e76f51" />
+  <!-- Furrow Opener Tynes -->
+  <line x1="130" y1="125" x2="120" y2="180" stroke="#2b2d42" stroke-width="8" />
+  <line x1="200" y1="125" x2="190" y2="180" stroke="#2b2d42" stroke-width="8" />
+  <line x1="270" y1="125" x2="260" y2="180" stroke="#2b2d42" stroke-width="8" />
+  <line x1="340" y1="125" x2="330" y2="180" stroke="#2b2d42" stroke-width="8" />
+  <!-- Depth Wheel -->
+  <circle cx="360" cy="160" r="30" fill="#2b2d42" />
+  <circle cx="360" cy="160" r="16" fill="#ffd166" />
+
+  </g>
+
+  <!-- Technical Spec & Model Caption Ribbon -->
+  <rect x="30" y="30" width="280" height="44" rx="8" fill="#000000" fill-opacity="0.4" />
+  <circle cx="52" cy="52" r="8" fill="#e76f51" />
+  <text x="70" y="57" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="bold" fill="#ffffff">Zero-Till Seed Drill</text>
+
+  <!-- Bottom Spec Banner -->
+  <rect x="30" y="435" width="740" height="40" rx="6" fill="#ffffff" fill-opacity="0.12" />
+  <text x="50" y="460" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#e2e8f0">🚜 SPECS: 9-Row Pneumatic Sowing • Sows directly into stubble</text>
+  <text x="750" y="460" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="bold" fill="#e76f51">KhetSaathi Certified</text>
+</svg>
